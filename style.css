@@ -65,11 +65,25 @@ th {
     padding: 8px;
 }
 
+.colum-1{
+    background-color: aqua;
+}
+
+.colum-2 {
+    background-color:blueviolet;
+}
+.colum-3 {
+    background-color:beige;
+}
+.colum-4 {
+    background-color:chocolate;
+}
+
 td {
     border: 1px solid #000000;
     padding: 8px;
 }
 
-tbody tr:hover {
-    background-color:#f4af42;
+tbody td:hover {
+    background-color:#ffffff;
 }
