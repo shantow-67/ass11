@@ -11,7 +11,7 @@ body {
 }
 .container {
     width: 70%;
-    height: 1000px;
+    height: 100%;
     background-color: var(--primary-color);
     padding: 20px;
     margin: 0 auto;
@@ -21,11 +21,37 @@ h1 {
     color: #ffffff;
     font-size: 24px;
     text-align: center;
+    position: relative;
 }
 
+h1::before{
+    content:"";
+    display:block;
+    left: 5%;
+    top: 50%;
+   background: #ffffff;
+   width: 55px;
+   height: 5px;
+    position: absolute;
+  
+
+}
+
+h1::after {
+    content: "";
+    display: block;
+    right: 5%;
+    top: 50%;
+    background: #ffffff;
+    width: 55px;
+    height: 5px;
+    position: absolute;
+
+}
 
 a{
-    color: #f4af42;
+    color: greenyellow;
+    font-weight: bolder;
 
 }
 
@@ -36,6 +62,7 @@ a{
  }
 
  ul {
+    font-size: large;
      color: #ffffff;
  }
 
@@ -86,4 +113,28 @@ td {
 
 tbody td:hover {
     background-color:#ffffff;
+}
+footer {
+    background-color: #111;
+}
+
+.sticky-footer {
+    margin-top: 100px;
+    position: sticky;
+    top: 100%;
+}
+
+.footerNav ul {
+    display: flex;
+    justify-content: center;
+}
+
+.footerNav ul li {
+    color: #ffffff;
+    margin: 20px;
+}
+
+.footerbottom {
+    display: flex;
+    justify-content: center;
 }
